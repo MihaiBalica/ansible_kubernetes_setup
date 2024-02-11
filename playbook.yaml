@@ -1,0 +1,8 @@
+---
+- name: Setup Kubernetes Cluster
+  hosts: all
+  become: yes
+  roles:
+    - common
+    - kubernetes-master
+    - kubernetes-slave

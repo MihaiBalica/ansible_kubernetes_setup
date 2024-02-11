@@ -1,0 +1,4 @@
+---
+- name: Join Kubernetes Cluster
+  command: "{{ hostvars['master'].join_command.stdout }}"
+  when: "'kubeadm join' in hostvars['master'].join_command.stdout"

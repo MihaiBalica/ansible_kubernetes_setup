@@ -1,0 +1,10 @@
+[masters]
+master ansible_host=172.19.100.123
+
+[slaves]
+slave1 ansible_host=172.19.100.125
+slave2 ansible_host=172.19.100.124
+
+[all:vars]
+ansible_user=<your_ssh_user>
+ansible_ssh_private_key_file=<path_to_your_ssh_key>
